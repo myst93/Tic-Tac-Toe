@@ -65,3 +65,8 @@ h1{
 .hide {
     display: none;
 }
+
+#msg{
+    color: palegoldenrod;
+    font-size: 5rem;
+}
