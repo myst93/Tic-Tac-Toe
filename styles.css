@@ -45,5 +45,23 @@ h1{
 
 .reset{
     font-size: 29px;
-    background-color: antiquewhite;
+    background-color: black;
+    padding: 1rem;
+    color: blanchedalmond;
+    border-radius: 1rem;
+    border: none;
+
+}
+
+.newgame{
+   font-size: 29px;
+    background-color: black;
+    padding: 1rem;
+    color: blanchedalmond;
+    border-radius: 1rem;
+    border: none; 
+}
+
+.hide {
+    display: none;
 }
