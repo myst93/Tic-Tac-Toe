@@ -3,7 +3,10 @@ let reset = document.querySelector(".reset")
 let newgame = document.querySelector(".newgame")
 let msgcontainer = document.querySelector(".msg-container")
 let msg = document.querySelector("#msg")
+
 let turn0=true;
+let count=0;
+
 
 const win = [
     [0,1,2],
@@ -18,7 +21,15 @@ const win = [
 ]
 
 boxes.forEach((val)=>{                // callbackfunction is passed as an argument
-    val.addEventListener("click", ()=>{
+    val.addEventListener("click", () => {
+        count++;
+        if(count==9 && !iswinner){
+            msg.innerText= "The Game is Tied"
+            msgcontainer.classList.remove("hide")
+            disabledboxes()
+            count=0
+        }
+        console.log("The box was clicked")
         if(turn0===true){
             val.innerText="X"
             turn0=false
@@ -49,12 +60,12 @@ const checkwinner = ()=>{
                 // console.log(`Winner is ${var0}`)
                 showwinner(var0);
                 // disabledboxes();   
-            } 
-        } 
+            }
+        }
     }   
 
 }
-
+let iswinner=checkwinner();
 const showwinner =(winner)=>{
     msg.innerText=`Congratulations the winner is ${winner}`
     msgcontainer.classList.remove("hide")
@@ -78,6 +89,7 @@ const resetGame =()=>{
     turn0=true
     enabledboxes()
     msgcontainer.classList.add("hide")
+    count=0;
     
 }
 
@@ -85,3 +97,6 @@ const resetGame =()=>{
 
 reset.addEventListener("click", resetGame)
 newgame.addEventListener("click", resetGame)
+
+
+
