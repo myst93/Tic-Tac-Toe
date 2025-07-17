@@ -1,5 +1,4 @@
 # Tic-Tac-Toe
-<img width="1841" height="1066" alt="image" src="https://github.com/user-attachments/assets/01519df6-cca2-4d2f-8e7c-c23437fc1cce" />
 
 A simple web-based Tic-Tac-Toe game built with HTML, CSS, and JavaScript.
 
@@ -34,7 +33,7 @@ A simple web-based Tic-Tac-Toe game built with HTML, CSS, and JavaScript.
 
 ## Screenshot
 
-![Tic-Tac-Toe Screenshot](screenshot.png)
+<img width="1841" height="1066" alt="image" src="https://github.com/user-attachments/assets/01519df6-cca2-4d2f-8e7c-c23437fc1cce" />
 
 ---
 
